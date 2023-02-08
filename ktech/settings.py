@@ -17,7 +17,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS=['']
+CSRF_TRUSTED_ORIGINS=['https://8000-abdullahalhar-ktechzone-fibqi6f8852.ws-eu85.gitpod.io']
 
 # Application definition
 
