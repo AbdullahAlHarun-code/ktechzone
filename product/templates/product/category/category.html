@@ -1,0 +1,8 @@
+<h1>   Category Page: </h1>
+
+{% for cat in category %}
+    <p>{{ cat.name}}</p>
+    {% with cat.images.all|first as image %}
+        <a href="{{ cat.get_absolute_url }}"><img style="width:150px" src="/media/{{ image.image }}" /> </a>
+    {% endwith %}
+{% endfor %}

@@ -1,0 +1,12 @@
+<h1>   Category Page: </h1>
+
+{{categoryDetails.name}}
+{% for series in categoryDetails.catSeries.all %}
+    <p>{{ series.name}}</p>
+    
+    {% with series.image as image %}
+    {% if image %}
+    <a href="{{ series.get_absolute_url}}"><img style="width:150px;height:150px" src="/media/{{ image }}" /></a>
+    {% endif %}
+    {% endwith %}
+{% endfor %} 

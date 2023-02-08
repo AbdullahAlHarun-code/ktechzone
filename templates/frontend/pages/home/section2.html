@@ -1,0 +1,35 @@
+{% load static %}
+<!-- ...::: Strat Shipping Section :::... -->
+<div class="shipping-section section-fluid-270 section-top-gap-100">
+    <div class="box-wrapper">
+        <!-- Start Shipping Wrapper -->
+        <div class="shipping-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="row justify-content-between mb-n40">
+                        
+                        {% for carousl in  section2.carousel.all %}    
+                        <div class="col-xl-4 col-md-6 col-12 mb-40">
+                            <!-- Start Shipping Single Items -->
+                            <div class="shipping-single-item--style-1">
+                                <div class="icon">
+                                    <img class="img-fluid" src="{% static 'assets/images/icons/' %}{{carousl.subTitle}}" width="46" height="33" loading="lazy" alt="shipping-icon-1">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">{{carousl.title|title}}</h4>
+                                    <p>{{carousl.description}}</p>
+                                </div>
+                            </div>
+                            <!-- Start Shipping Single Items -->
+                        </div>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Shipping Wrapper -->
+    </div>
+</div>
+<!-- ...::: End Shipping Section :::... -->

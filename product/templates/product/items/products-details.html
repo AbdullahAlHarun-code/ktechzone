@@ -1,0 +1,43 @@
+{% load mathfilters %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#capacity, #color, #conditions').on('change', function() {
+        //alert(this.id)
+        $('#detect_button').val(this.id)
+        this.form.submit();
+    });
+});
+</script>
+
+<h1>   Products Details Page: </h1>
+<a href="{{ productsDetails.phoneModel.get_absolute_url }}">Models</a><br>
+{{productsDetails.name}}<br><br>
+{{productsDetailsVariation.price}}<br><br>
+{{productsDetailsVariation.capacity.name}}<br><br>
+{% for image in productsDetails.images.all %}
+    
+    <a href=""><img style="width:150px;height:150px" src="/media/{{ image.image }}" /></a>
+    <br><br>
+{% endfor %}
+
+
+<form method='post'>
+    {% csrf_token %}
+    <select id="capacity" name='capacity' class="form-select-filter" aria-label="Default select example">
+        {% for varity in productsDetails.variation.all %}
+        <option {% if  productsDetailsVariation.capacity.name|stringformat:'s' == varity.capacity|stringformat:'s' and productsDetailsVariation.price|floatformat:2 == varity.price|floatformat:2 %} selected  {% endif %}value='{{varity.slug}}'>{{varity.capacity}} {% if  productsDetailsVariation.price|floatformat:2 != varity.price|floatformat:2 %} ({{ varity.price|sub:productsDetailsVariation.price|floatformat:2 }} )€ {% endif %} {% if  productsDetailsVariation.conditions.name|stringformat:'s' == varity.conditions|stringformat:'s' and productsDetailsVariation.price|floatformat:2 == varity.price|floatformat:2 %} &#10004  {% endif %}</option>
+        {% endfor %}
+      </select>
+      <select id="color" name='color' class="form-select-filter" aria-label="Default select example">
+        {% for varity in productsDetails.variation.all %}
+        <option {% if  productsDetailsVariation.color.name|stringformat:'s' == varity.color|stringformat:'s' and productsDetailsVariation.price|floatformat:2 == varity.price|floatformat:2 %} selected  {% endif %}value='{{varity.slug}}'>{{varity.color}} {% if  productsDetailsVariation.price|floatformat:2 != varity.price|floatformat:2 %} ({{ varity.price|sub:productsDetailsVariation.price|floatformat:2 }} )€ {% endif %} {% if  productsDetailsVariation.conditions.name|stringformat:'s' == varity.conditions|stringformat:'s' and productsDetailsVariation.price|floatformat:2 == varity.price|floatformat:2 %} &#10004  {% endif %}</option>
+        {% endfor %}
+      </select>
+      <select id="conditions" name='conditions' class="form-select-filter" aria-label="Default select example">
+        {% for varity in productsDetails.variation.all %}
+        <option {% if  productsDetailsVariation.conditions.name|stringformat:'s' == varity.conditions|stringformat:'s' and productsDetailsVariation.price|floatformat:2 == varity.price|floatformat:2 %} selected  {% endif %}value='{{varity.slug}}'>{{varity.conditions}} {% if  productsDetailsVariation.price|floatformat:2 != varity.price|floatformat:2 %} ({{ varity.price|sub:productsDetailsVariation.price|floatformat:2 }} )€ {% endif %} {% if  productsDetailsVariation.conditions.name|stringformat:'s' == varity.conditions|stringformat:'s' and productsDetailsVariation.price|floatformat:2 == varity.price|floatformat:2 %} &#10004  {% endif %} </option>
+        {% endfor %}
+      </select>
+      <input type='hidden' name='detect_button' val='' id='detect_button'>
+</form>

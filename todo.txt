@@ -1,0 +1,168 @@
+- create project initial project
+- Create app
+    - products
+    - accounts
+    - cart 
+    - checkout 
+    - payment
+    - frontend 
+    - reviews
+    - faqs
+    - chat 
+- Template
+    - frontend
+        - base.html
+- Static
+    - frontend
+        - css
+        - js
+
+
+
+
+- package
+    - pillow 
+    - slugify
+
+
+- Media
+    - web
+        - products
+        - category
+- Filter 
+    - sort by 
+    - price range 
+    - storage 
+    - battery 
+    - display size 
+    - color 
+    - camera 
+    - release year 
+
+- Models 
+    - Products 
+    - 
+https://swappie.com/ie/iphone/iphone-11-pro-max/iphone-11-pro-max-256gb-space-gray-16/
+https://swappie.com/ie/iphone/iphone-11-pro-max/iphone-11-pro-max-256gb-space-gray-2/
+url 
+    - domain.ie/ie
+    - https://swappie.com/ie/iphone/
+
+    
+    iphone - iphone-11 - iphone-11-pro  iphone-11-pro-64gb-space-gray-3/, iphone-11-pro-64gb-gold-3/
+    category - series - model - product-name
+    
+- category 
+    - iphones 
+    - samsung phones
+    - heawei phones 
+    - laptops 
+    - ipads 
+    - tablets 
+    - smart phones 
+    - Monitors 
+    - Desktops 
+    - Cameras 
+    - audio 
+    - Cases
+
+    https://www.refurbed.ie/c/samsung-phones/
+
+
+    https://swappie.com/ie/model/iphone-11/
+    https://swappie.com/ie/model/iphone-11-pro/
+    https://swappie.com/ie/model/iphone-xs/
+
+    https://www.thefonestore.ca/pages/all-refurbished-iphone
+    https://www.thefonestore.ca/pages/all-refurbished-samsung
+    https://www.thefonestore.ca/collections/case-temp
+        headphones 
+        case-temp 
+        charger 
+        accessories
+
+
+    https://swappie.com/ie/iphone/iphone-11-pro/iphone-11-pro-64gb-space-gray-3/
+    https://swappie.com/ie/iphone/iphone-11-pro/iphone-11-pro-64gb-gold-3/
+    https://swappie.com/ie/iphone/iphone-11-pro/iphone-11-pro-64gb-silver-5/
+
+    https://swappie.com/ie/iphone/iphone-xs/iphone-xs-256gb-space-gray-7/
+
+
+
+    https://swappie.com/ie/price-point/iphones-up-to-400/
+    https://swappie.com/ie/price-point/iphones-up-to-200/
+
+    https://swappie.com/ie/category/refurbished-iphones-with-new-batteries/
+    https://swappie.com/ie/category/refurbished-iphones-for-teenagers/
+    https://swappie.com/ie/category/refurbished-iphones-for-photo-lovers/
+    https://swappie.com/ie/category/iphones-with-256gb-of-storage/
+
+    https://swappie.com/ie/category/refurbished-iphones-in-good-condition/
+    https://swappie.com/ie/category/refurbished-iphones-in-good-condition/#iphone-14-plus
+        - new batteries
+        - photo lovers 
+        - teenagers 
+        - high storage 
+        - good conditions 
+
+
+    https://swappie.com/ie/compare/iphone-11-vs-iphone-12/
+
+    https://swappie.com/ie/about-us/
+    https://swappie.com/ie/reviews/
+
+    https://swappie.com/ie/blog/
+    https://swappie.com/ie/blog/swappie-store-in-milan-from-23-nov-to-18-dec/
+
+- help center
+    https://help.swappie.com/lang/en_gb/
+    https://help.swappie.com/en_gb/do-you-replace-the-battery-of-every-phone-SJyHlHYID
+
+    https://help.swappie.com/en_gb/search?q=delivery
+    https://help.swappie.com/en_gb/search?q=warranty
+    https://help.swappie.com/en_gb/search?q=return
+    https://help.swappie.com/en_gb/search?q=payment
+
+    https://help.swappie.com/en_gb/contact/submit-a-request-SJCaBh8P
+
+
+
+collections/apple-iphone-12-mini
+
+frontend url
+    - home 
+
+    - login
+    - logout 
+    - register 
+    - myaccount 
+    - cart 
+    - checkout 
+    - forget password
+    - activate account 
+    - 
+
+    - about us 
+    - customer care 
+    - Terms and conditions 
+    - contact us 
+    - blogs 
+    - reviews 
+    - help 
+        - delivery 
+        - return 
+        - warrenty
+        - payment methods 
+        - get price query 
+
+    - collections 
+        - iphones
+        - samsung phones
+        - tablets 
+        - audio 
+        - laptops 
+        - cases & Tempered glass
+        - chargers
+        - smartwatches 
+        - monitors 

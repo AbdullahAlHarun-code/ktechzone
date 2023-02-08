@@ -1,0 +1,166 @@
+Iphone color:
+    - Gold #F9E5C9
+    - Rose Gold #E6C7C2
+    - Silver #F5F5F0 
+    - Space Gray #25282A
+    - White #FBF7F4 
+    - Black  #201D24
+    - Blue #215E7C
+    - Yellow #F3D060
+    - Coral  #EE7762
+    - Red #A50011
+    - Purple #B8AFE6
+    - SIERRA BLUE #9BB5CE
+    - GRAPHITE #5C5B57
+    - ALPINE GREEN #505F4E
+    - STARLIGHT #F9F3EE
+    - MIDNIGHT #171E27
+    - PINK #FAE0D8
+    - GREEN #364935
+    - PACIFIC BLUE #2E4755
+    - MIDNIGHT GREEN #4E5851
+color = [
+            {'name':'Gold','hex':'#F9E5C9'},
+            {'name':'Rose Gold','hex':'#E6C7C2'},
+            {'name':'Silver','hex':'#F5F5F0'},
+            {'name':'Space Gray','hex':'#25282A'},
+        ]
+    
+capacity = 
+    - 16GB
+    - 32GB
+    - 64GB
+    - 128GB
+    - 256GB
+    - 512GB
+    - 1TB
+conditions:
+ - good
+ - very good
+ - excellent 
+
+Base:
+    header
+        main logo 
+        meta 
+        title 
+    footer
+        footer logo 
+        footer image payment 
+        copyright text 
+        4 blocks 
+            product 
+
+            offer 
+            Information or Need help?
+            About or about us 
+                about us 
+                blog 
+
+            contact us 
+                chat time
+                phone number
+                got a press inquiry? click here 
+
+            cart 
+                view cart 
+
+
+ Home: 
+    - section1 
+        - carsoul 
+            -image size: 469X760
+            - slider1           
+                -title: Refurbished Cell Phones 
+                -subtitle: The sustainable way to upgrade your tech 
+                -text: 
+                -image: 
+            - slider2
+                -title: the best eay to store and share your data
+                -subtitle: starting from tk
+                -text
+                -image
+            - slider3
+                -title: Guess what it fells like to dance
+                -subtitle: starting from tk.400
+                -text
+                -image
+    -section2
+        - fast delivary in Ireland
+            to your door or in store
+        - 12 Month gurantee
+            and try for 15 days
+        - secure payments
+            Flexible options available
+    section3
+        -slider1    
+            - up to 30% offer
+            - BestFashion
+            - best get better
+            image 435X308
+
+fast pick express 
+within 3 hours
+selected areas 
+
+- product details demo 
+    - limited offer 
+    iphone 13 
+    blue | 128GB | Acceptable 
+    capacity 
+    conditions
+    battery 
+    colour 
+    image 
+    you may also like 
+
+    description
+    product specification
+    only 9 left in stock
+    included in the box
+
+Iphone:
+    iphone 11
+    iphone 11 pro 
+    iphone 11 pro max 
+
+    iphone x 
+    iphone xr 
+
+    iphone 8 
+    iphone 8 plus 
+    iphone SE 2020 
+    
+    iphone 12 
+    iphone 12 mini 
+    iphone 12 pro max 
+    iphone 12 pro 
+
+    iphone 13 pro max 
+    iphone 13 pro 
+    iphone 13 
+    iphone 13 mini 
+    
+    
+    iphone XS 
+    iphone XS max 
+    
+    iphone 7 plus 
+    iphone 7 
+
+Samsung:
+    samsung Galaxy Note 20 Ultra 5G 
+    Samsung Galaxy S21 5G 
+    Samsung Galaxy S20 Plus 5G  
+    Samsung Galaxy S20 5G 
+    Samsung Galaxy S20FE
+    samsung galaxy s10 plus 
+    samsung galaxy s10
+    samsung galaxy s9 plus  
+    samsung galaxy A 70  
+    samsung galaxy A 51  
+    samsung galaxy A 50  
+    samsung galaxy A 50  
+    samsung galaxy A 12
+
+

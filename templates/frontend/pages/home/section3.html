@@ -1,0 +1,35 @@
+{% load static %}
+<!-- ...::: Strat Banner Card Section Section :::... -->
+<div class="banner-card-section section-fluid-270 section-top-gap-100">
+    <div class="box-wrapper">
+        <div class="banner-card-wrapper">
+            <div class="container-fluid">
+                <div class="row mb-n20">
+                    
+                    {% for slider in section3.carousel.all %}
+                        
+                   
+                        
+                    <div class="col-lg-4 col-md-6 mb-20">
+                        <!-- Start Banner Card Single Item -->
+                        <div class="banner-card-single-item banner-animate--flash">
+                            <div class="image img-responsive">
+                                <img src="media/{{ slider.image}}" width="435" height="308" loading="lazy" alt="banner-image-1">
+                            </div>
+                            <div class="content">
+                                <p class="tag">{{slider.subTitle|title}}</p>
+                                <h4 class="title">{{slider.title|title}}</h4>
+                                <a href="shop-grid-sidebar-left.html" class="text-link white">GET IT NOW</a>
+                            </div>
+                            <span class="banner-cad-note">{{slider.description}}</span>
+                        </div>
+                        <!-- End Banner Card Single Item -->
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ...::: End Banner Card Section Section :::... -->

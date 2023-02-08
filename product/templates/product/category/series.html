@@ -1,0 +1,8 @@
+<h1>   Series Page: </h1>
+{{ seriesDetails.name}}<hr><a hre="{{ seriesDetails.get_absolute_url}}">Test</a>
+{% for model in seriesDetails.phoneModels.all %}
+    <p><a href="{{ model.get_absolute_url }}">{{ model.name}}</a></p>
+    {% comment %} {% with cat.images.all|first as image %}
+        ><img style="width:150px" src="/media/{{ image.image }}" />
+    {% endwith %}  {% endcomment %}
+{% endfor %}
