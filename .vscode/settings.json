@@ -1,0 +1,6 @@
+{
+    "html-css-class-completion.enableEmmetSupport": true,
+    "git.allowForcePush": true,
+    "html.format.indentInnerHtml": true,
+    "html.format.templating": true
+}

@@ -164,3 +164,301 @@ Samsung:
     samsung galaxy A 12
 
 
+
+
+-------------------------
+
+
+
+
+
+
+
+Cases | phones cases, ipad cases
+Cable & Chargers | phone chargers, laptop chargers , Wireless Chargers
+Cables &amp; Chargers
+audio , | airpods, bluetooth, wire headphones, Speakers, bluetooth speakers
+PowerBanks
+Memory Cards | 
+USB Flash Drives
+Adapters
+Car acceessoreis | usb car chargers, Car Holder &amp; Kit
+Camera | web cams 
+Others | Waterproof Bags, Swipe Wipes, Sticker Tags
+Watch | Watch Case, Samsung watch, Apple Watch 
+phone gadgets | phone grips and phone stands, Ring Holders, Phone Mirrors, Phone Charms, Phone Pockets, PopGrip
+toys | fidget toys
+laptops accessories | laptop chargers, harddrives , Usb flash drives
+
+Collection:
+    iphones
+    samsung phones 
+    other Phones
+    tablets 
+    laptops 
+    accessoreies
+Collection
+    phones 
+        category 
+            series
+                model 
+    tablets
+        category
+            series 
+                model 
+    laptops
+        category brand
+            series 
+                model 
+    acccessories
+        category
+            subcategory
+
+
+Model 
+    StoreCollection(web collection)
+    Collection(f.StoreCollection)(phones,tablets...)
+    SubCollection(f.collection)(iphones,samsung)
+
+    ProductSeries
+    ProductModels
+    ProductBrand
+    Product
+        SubCollection
+
+    name 
+StoreCollection>Collection>SubCollection>SubSubCollection
+web_stores>phones>iphones>iphones>
+seo 
+    title 
+    meta(contenttype)(active) 
+shipping
+    name 
+    days(int)
+    price 
+    delevery method
+    get delivery estimate date
+    get delivery text
+phones
+    name
+    series 
+    model 
+laptops
+    name 
+    laptop_brand 
+    varient
+        slug
+        color (varient)
+        storage (varient)
+        condition (varient)
+        warranty (varient)
+        ram()
+        processor
+        graphics card
+        images (Image.conntenttype)
+        price (price)
+        reviews 
+        include 
+    feature (featured.conntenttype)
+    product_details (Details.conntenttype)
+tablets
+    category(f.SubSubCollection)
+    name 
+    reviews
+    varient
+        slug
+        color (varient)
+        storage (varient)
+        condition (varient)
+        warranty (varient)
+        images (Image.conntenttype)
+        price (price)
+        reviews 
+    feature (featured.conntenttype)
+    product_details (Details.conntenttype)
+    get_price_range
+    images (Image.conntenttype)
+    slug
+    series
+    model 
+    stock (stock) 
+accessories 
+    category(f.SubSubCollection)
+    name 
+    brand 
+    slug
+    type 
+    color 
+    images (Image.conntenttype)
+    reviews 
+    stock 
+    active 
+    stock (stock)
+    price (price)
+    feature (featured.conntenttype)
+    product_details (Details.conntenttype)
+
+Details 
+    name 
+    description
+
+featured 
+    name 
+    description
+stock 
+    in_store 
+    online_store
+    get-stock()
+price   
+    new_price
+    old_price 
+    get_save()
+
+----------------------------
+Collection  
+    phones
+        iphones 
+            iphone 14
+            iphone 13 
+            iphone 12
+            iphone SE 
+            iphone 11 
+            iphone 8
+            iphone XS 
+            iphone XR 
+            iphone 7 
+            iphone X 
+            iphone 6S
+            iphone 5S 
+            iphone 6  
+        samsung 
+            samsung galaxy S22
+            samsung galaxy S21
+            samsung galaxy S23
+            samsung galaxy Z Fold
+            samsung galaxy Z Flip
+            samsung galaxy A52S
+            samsung galaxy S20
+            samsung galaxy S10
+            samsung galaxy Note 20
+            samsung galaxy S9 
+            samsung galaxy Z
+            samsung galaxy Note 10 
+            samsung galaxy A52 
+            samsung galaxy A70 
+            samsung galaxy S8 
+            samsung galaxy S7 
+            samsung galaxy A21 
+            samsung galaxy A5 
+            samsung galaxy A9 
+            samsung galaxy A51 
+            samsung galaxy A40 
+            samsung galaxy A20 
+            samsung galaxy Note 8 
+            samsung galaxy A8
+        google 
+        Oneplus
+            OnePlus Nord 
+            OnePlus 9 
+            OnePlus 8 
+            OnePlus 7T 
+            OnePlus 5T 
+            OnePlus 5 
+            OnePlus 6T 
+            OnePlus 6 
+            OnePlus 7 
+        Xiaomi redmi 
+            Xiaomi Redmi Note 10
+            Xiaomi Redmi Note 9
+            Xiaomi Redmi Note 8
+            Xiaomi Redmi 7
+            Xiaomi Redmi Note 7
+            Xiaomi Redmi Note 8T
+            Xiaomi Redmi 5
+            Xiaomi Redmi 6
+            Xiaomi Redmi 7A
+            Xiaomi Redmi 8
+            Xiaomi Redmi Note 5A
+            Xiaomi Redmi Note 5
+            Mi Note 10
+            Xiaomi Redmi 6A
+            Xiaomi Redmi 8A
+            Xiaomi Redmi Note 4
+            Xiaomi Redmi Note 6
+        Oppo 
+        Nokia 
+            Nokia 8000-Series 
+            Nokia 100-Series 
+            Nokia C-Series 
+            Nokia 3000-Series 
+            Nokia 2000-Series 
+            Nokia 1000-Series 
+            Nokia 6000-Series 
+            Nokia N-Series 
+            Nokia 200-Series 
+            Nokia 5 
+            Nokia E-Series 
+            Nokia 8
+            Nokia Lumia 
+            Nokia 7
+            Nokia 800-Series 
+            Nokia Asha 
+            Nokia 2
+            Nokia 6
+            Nokia 1
+            Nokia 300-Series 
+            Nokia 9
+        Xiaomi 
+            Xiaomi Poco F3 
+            Xiaomi Poco X3
+            Xiaomi Mi 12
+            Xiaomi Mi 11
+            Xiaomi Note 10
+            Xiaomi Mi 9
+            Xiaomi Mi 10
+            Xiaomi Mi A2 
+            Xiaomi Mi 9T 
+            Xiaomi Mi Mix 2
+            Xiaomi Mi 8
+            Xiaomi Mi A1 
+            Xiaomi Mi A3
+            Xiaomi Mi Mix 3
+            Xiaomi Poco F2
+            Xiaomi Poco F1
+            Xiaomi 12S
+        Sony 
+        Huawei 
+            P30
+            P40
+            P20
+            Mate 20
+            Y6
+            Mate 10
+            P9
+            P10 
+            Y7 
+            P Smart 
+            Ascend 
+            P8 
+            Y5 
+            Mate 9
+        Doro 
+            Doro 6000-Series 
+            Doro 8000-Series 
+            Doro 5000-Series 
+            Doro 7000-Series 
+            Doro 1000-Series 
+            Doro PhoneEasy 
+            Doro 2000-Series 
+            Doro Primo
+        Realme
+             
+        Alkatel 
+            OneTouch 
+            OneTouch PIXI
+            OneTouch POP
+
+
+    laptops
+    tablets
+    accessoreies

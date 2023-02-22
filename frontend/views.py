@@ -14,14 +14,16 @@ from .models import(
 base = PageCategory.objects.filter(name='base').first()
 header = base.allPageSection.filter(name='header').first()
 logo = header.sectionImage.all().first()
-print('Logo', logo.image.url)
 def test(request):
     template_name = 'frontend/test.html'
     url = 'http://127.0.0.1:8001/products/varientlist/'
+    url1 = 'http://127.0.0.1:8002/collections/'
     api = requests.get(url=url)
+    api1 = requests.get(url=url1)
     print(api)
     context = {
-        'api':list((api.json()))
+        'api':list((api.json())),
+        'api1':list((api1.json()))
     }
     return render(request, template_name, context)
 
@@ -32,11 +34,26 @@ def products(request):
         'header': header,
     }
     return render(request, template_name, context)
+
+def all_products(request):
+    template_name = 'frontend/pages/products/products.html'
+    page = PageCategory.objects.filter(name='products').first()
+    header = page.allPageSection.all().filter(name='header').first()
+    
+    context = {
+        'header':header,
+    }
+    return render(request, template_name, context)
 def home(request):
     template_name = 'frontend/pages/home/home.html'
+    url = 'http://127.0.0.1:8001/products/varientlist/'
+    url1 = 'http://127.0.0.1:8002/collections/'
+    #api = requests.get(url=url)
+    api1 = requests.get(url=url1)
     #template_name = 'frontend/test.html'
     # page = PageCategory.objects.select_related('allPageSection', 'allPageSection__sectionText', 'allPageSection__sectionImage', 'allPageSection__carousel').filter(name='home').first()
     page = PageCategory.objects.filter(name='home').first()
+    print('Category Test', page.tags.all())
     section1 = page.allPageSection.all().filter(name='section1').first()
     section2 = page.allPageSection.all().filter(name='section2').first()
     section3 = page.allPageSection.all().filter(name='section3').first()
@@ -48,6 +65,7 @@ def home(request):
     logo = header.sectionImage.all().first()
     
     context = {
+        'api1':list((api1.json())),
         'logo': logo,# logo
         'header': header,
         'page': page,
@@ -57,5 +75,6 @@ def home(request):
         'section4': section4,
         'section5': section5,
         'products': products,
+        'test': 45,
     }
     return render(request, template_name, context)

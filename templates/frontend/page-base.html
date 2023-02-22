@@ -458,13 +458,13 @@
         <div class="box-wrapper">
             <div class="breadcrumb-wrapper breadcrumb-wrapper--style-1 pos-relative">
                 <div class="breadcrumb-bg">
-                    <img src="{% static 'assets/images/breadcrumb/breadcrumb-img-shop-page.webp' %}" alt="">
+                    <img style="width:100%" src="{{header.sectionImage.all.0.image.url}}" alt="">
                 </div>
                 <div class="breadcrumb-content section-fluid-270">
                     <div class="breadcrumb-wrapper">
                         <div class="content">
                             <span class="title-tag">BEST DEAL FOREVER</span>
-                            <h2 class="title"><span class="text-mark">Hurry!</span> <br> Get your product now</h2>
+                            <h2 class="title"><span class="text-mark">{{header.sectionText.all.0.query_text}}</span> <br> {{header.sectionText.all.0.text}}</h2>
                         </div>
                         <ul class="breadcrumb-nav">
                             <li><a href="shop-grid-sidebar-left.html">Shop</a></li>

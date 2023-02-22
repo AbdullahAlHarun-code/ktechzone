@@ -9,6 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
         
     path('', home, name='home'),
+    path('products/', all_products, name='all_products'),
 
     # all phones url
     path('test/', test, name='test'),

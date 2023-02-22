@@ -20,6 +20,30 @@
   <div class="row">
     <div class="col-sm-12">
       <h3>Category</h3>
+      {% for product in  api1 %}
+        <h5 class="card-title">{{product.name}}</h5>
+        
+        {% if product.subcategory %}
+          
+          {% for ps in  product.subcategory%}
+            <h5 class="pl-3 card-title">{{ps.name}}</h5>
+            
+            {% if  ps.sub_subcategory %}
+            
+              {% for pss in  ps.sub_subcategory%}
+              <h5 class="pl-5 card-title"> {{pss.name}}</h5>
+              
+              {% endfor %}
+            {% endif %}
+              
+            
+              
+            
+          {% endfor %}
+            
+        {% endif %}
+          
+      {% endfor %}
       
      
       {% for product in  api %}
