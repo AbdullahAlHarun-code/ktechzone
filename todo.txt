@@ -1,4 +1,4 @@
-- create project initial project
+- create project initial project for github
 - Create app
     - products
     - accounts
