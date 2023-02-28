@@ -54,7 +54,9 @@ def all_products(request, slug=None, sub_slug=None, sub_subslug=None):
         url1 = 'http://127.0.0.1:8002/products/'
     url2 = 'http://127.0.0.1:8002/collections/'
     #api = requests.get(url=url)
+    # if len(list((products.json())))==1 and 
     products = requests.get(url=url1)
+    print(len(list((products.json()))))
     api1 = requests.get(url=url2)
 
     page = PageCategory.objects.filter(name='products').first()
