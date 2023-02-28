@@ -11,7 +11,8 @@ urlpatterns = [
     path('', home, name='home'),
     path('products/', all_products, name='all_products'),
     path('products/<slug:slug>/', all_products, name='slug_all_products'),
-    path('products/<slug:slug>/<slug:sub_slug>', all_products, name='sub_slug_all_products'),
+    path('products/<slug:slug>/<slug:sub_slug>/', all_products, name='sub_slug_all_products'),
+    path('products/<slug:slug>/<slug:sub_slug>/<slug:sub_subslug>/', all_products, name='product-details'),
 
     # all phones url
     # path('test/', test, name='test'),

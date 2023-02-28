@@ -36,14 +36,20 @@ def products(request):
     return render(request, template_name, context)
 def basic_info():
     pass
-def all_products(request,slug=None, sub_slug=None):
-    template_name = 'frontend/pages/products/products.html'
+def all_products(request, slug=None, sub_slug=None, sub_subslug=None):
+    if sub_subslug is None:
+        template_name = 'frontend/pages/products/products.html'
+    else:
+        template_name = 'frontend/pages/products/products-details.html'
     api_url = 'http://127.0.0.1:8002/'
-    if slug is not None and sub_slug is None:
-        url1 = f'http://127.0.0.1:8002/products/{slug}'
-    elif slug is not None and sub_slug is not None:
+    if slug is not None and sub_slug is None and sub_subslug is None:
+        url1 = f'http://127.0.0.1:8002/products/{slug}/'
+    elif slug is not None and sub_slug is not None and sub_subslug is None:
         
-        url1 = f'http://127.0.0.1:8002/products/{slug}/{sub_slug}'
+        url1 = f'http://127.0.0.1:8002/products/{slug}/{sub_slug}/'
+    elif slug is not None and sub_slug is not None and sub_subslug is not None:
+        
+        url1 = f'http://127.0.0.1:8002/products/{slug}/{sub_slug}/{sub_subslug}/'
     else:
         url1 = 'http://127.0.0.1:8002/products/'
     url2 = 'http://127.0.0.1:8002/collections/'

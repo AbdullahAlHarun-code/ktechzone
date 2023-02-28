@@ -1,0 +1,168 @@
+{% extends '../../page-base.html' %}
+{% load static %}
+{% block content %}
+<!-- ...::: Strat Product Gallery Section :::... -->
+<div class="product-gallery-info-section section-fluid-270 section-top-gap-100">
+    <div class="box-wrapper">
+        <div class="product-gallery-info-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    {% include './single-product/gallery.html' %}
+                    <div class="col-lg-6">
+                        <!-- Start Product Content -->
+                        <div class="product-content">
+                            <span class="catagory">{{products.0.category.0.brand.name}}</span>
+                            <h2 class="title">{{products.0.name}}</h2>
+                            <span class="author">Stock: {{products.0.stock.text}}</span>
+                            <div class="bottom">
+                                {% if products.0.reviews %}
+                                <ul class="review-star">
+                                    {% for index in products.0.reviews.fill %}
+                                        <li class="fill"><span class="material-icons">star</span></li>
+                                    {% endfor %}
+                                    {% for index in products.0.reviews.no_fill %}
+                                        <li class="fill"><span class="material-icons">star_border</span></li>
+                                    {% endfor %}
+                                    
+                                </ul>
+                                {%else %}
+                                
+                                {% endif %}
+
+                                <a href="wishlist.html" class="wishlist">Add Wishlist</a>
+                            </div>
+                            <span class="price">€{{products.0.price.price}} {% if products.0.price.old_price%}<del>€{{products.0.price.old_price}}</del>{% endif %}</span>
+                            <div class="product-variables">
+                                <!-- Start Product Single Variable -->
+                                <div class="product-variable-color">
+                                    <h6 class="title">Color</h6>
+                                    <ul class="color-select">
+                                        <li>
+                                            <label class="checkbox-default" for="color-red">
+                                                <input type="checkbox" id="color-red">
+                                                <span>Red</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-default" for="color-green">
+                                                <input type="checkbox" id="color-green">
+                                                <span>Green</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-default" for="color-blue">
+                                                <input type="checkbox" id="color-blue">
+                                                <span>Blue</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox-default" for="color-black">
+                                                <input type="checkbox" id="color-black">
+                                                <span>Black</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Product Single Variable -->
+
+                                <ul class="variable-items">
+                                    <li class="variable-single-items type-select">
+                                        <select>
+                                            <option value="S">Size: S</option>
+                                            <option value="M">Size: M</option>
+                                            <option value="L">Size: L</option>
+                                            <option value="XL" selected>Size: XL</option>
+                                            <option value="XXl">Size: XXL</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="product-details-group">
+                                <h6 class="title">Group Products</h6>
+                                <div class="product-variable-group table-responsive ">
+                                    <table class="table table-bordered align-middle">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="num-block skin-2">
+                                                        <div class="num-in">
+                                                            <span class="minus dis"></span>
+                                                            <input type="text" class="in-num" value="1" readonly="">
+                                                            <span class="plus"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="product-details-default.html">Women court</a>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <span class="product-price-reg">$150.00</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="cart.html" class="btn">Add To Cart</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="num-block skin-2">
+                                                        <div class="num-in">
+                                                            <span class="minus dis"></span>
+                                                            <input type="text" class="in-num" value="1" readonly="">
+                                                            <span class="plus"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="product-details-default.html">Formal Shirt</a>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <span class="product-price-reg">$31.00</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="cart.html" class="btn">Add To Cart</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="num-block skin-2">
+                                                        <div class="num-in">
+                                                            <span class="minus dis"></span>
+                                                            <input type="text" class="in-num" value="1" readonly="">
+                                                            <span class="plus"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="product-details-default.html">Women Pant</a>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <span class="product-price-reg">$20.00</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="cart.html" class="btn">Add To Cart</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Product Content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ...::: End Product Gallery Section :::... -->
+{% include './single-product/related-products.html' %}
+{% include './single-product/descriptions.html' %}
+
+{% endblock content %}

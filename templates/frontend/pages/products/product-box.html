@@ -4,27 +4,42 @@
     <div class="product-single-item-style-1">
         <a href="product-details-default.html" class="image img-responsive">
             <img class="img-fluid" src="{{api_url}}{{product.images.0.image}}" alt="">
+            {% if product.price.save %}
+                <ul class="tooltip-tag-items">
+                    <li class="color-green">Save - €{{product.price.save}}</li>
+                </ul>
+            {% endif %}
         </a>
         <div class="content">
             <div class="top">
                 <span class="catagory">{{product.category.0.brand.name}} {% for item in product.category.0.collection %}{%if forloop.first%},  {%endif%}{{ item.name}}{%if not forloop.last%},  {%endif%}{% endfor %} </span>
                 <h4 class="title"><a href="product-details-default.html">{{product.name}}</a></h4>
-                <span class="price">€{{product.price.0.price}}
+                <span class="price">€{{product.price.price}} {% if product.price.old_price %}<del class="price">€{{product.price.old_price}}</del>{% endif %}
                 </span>
             </div>
+            
             <div class="bottom">
+                {% if product.reviews %}
                 <ul class="review-star">
-                    <li class="fill"><span class="material-icons">star</span></li>
-                    <li class="fill"><span class="material-icons">star</span></li>
-                    <li class="fill"><span class="material-icons">star</span></li>
-                    <li class="fill"><span class="material-icons">star</span></li>
-                    <li class="fill"><span class="material-icons">star_half</span></li>
+                    {% for index in product.reviews.fill %}
+                        <li class="fill"><span class="material-icons">star</span></li>
+                    {% endfor %}
+                    {% for index in product.reviews.no_fill %}
+                        <li class="fill"><span class="material-icons">star_border</span></li>
+                    {% endfor %}
+                    
                 </ul>
+                {%else %}
+                
+                {% endif %}
                 <div class="product-event-items">
                     <a href="cart.html" class="btn cart-btn">Add to cart</a>
                     <a href="wishlist.html" class="btn wishlist-btn"><span class="material-icons">favorite_border</span></a>
                 </div>
+                
             </div>
+            <p>{{product.reviews.no_reviews}}</p>
+            
 
         </div>
 
